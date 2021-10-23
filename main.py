@@ -40,13 +40,12 @@ def get_list_of_entries():
     with open("list.txt", mode='r', encoding='utf-8') as f:
         read = f.read()
         entry_list = read.split(end_delimiter)
-        begin_spc = re.compile(r"^\s")
-        end_spc = re.compile(r"\s$")
+        spc = re.compile(r"(^\s)*(\s$)*")
         # print(read_entry)
         for entry in entry_list:
             word, definition = entry.split(delimiter)
-            sub_word = end_spc.sub("", word)
-            sub_def = begin_spc.sub("", definition)
+            sub_word = spc.sub("", word)
+            sub_def = spc.sub("", definition)
             one_entry_list = [sub_word, sub_def]
             list_of_entries.append(one_entry_list)
         print(f"list of entries is: {list_of_entries}\n")
