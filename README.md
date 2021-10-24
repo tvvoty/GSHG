@@ -14,9 +14,14 @@ You will need Python installed for the script to work. If you don't have python 
 
 .
 
-3). You will put your keys and definitions into the "list.txt" file. There are already three entries in the file provided for reference which you should delete, but in general - you put in a word, then the word delimiter, then the definition and then the entry delimiter, with default delimiters would look like this:
+3). You will put your keys and definitions into the "list.txt" file. There are already 4 entries in the file provided for reference, which you should delete, but in general - you put in a word, then the word delimiter, then the definition and then the entry delimiter, with default delimiters would look like this:
+
 
 A word #$# a long definition $#$
+
+
+However, don't put end delimiter after the last definition, it's gonna break it. So the last entry should look like this: A word #$# a long definition
+
 
 The white space after the word and before the definition will be automatically removed so you can safely have them for the sake of readability (e.g. you dont have to do that: A word#$# a long definition$#$)
 .
@@ -44,6 +49,11 @@ The white space after the word and before the definition will be automatically r
 3). Вы будете вписывать ваши слова и определения в файл "list.txt". Там уже находяться 3 вхождения, просто для примера, которые вам следует будет удалить, прежде чем писать свои, но в целом работает это примерно так:  вы вписываете слово, затем разделитель слова, затем определение и затем разделитель вхождения, с разделителями по умолчанию это будет выглядеть как-то так:
 
 Слово #$# А это его определение $#$
+
+Тем не менее, не ставьте разделитель вхождений после последнего вхождения, он сломает всё. Т.е. последнее вхождение должно выгладить так: 
+
+Слово #$# А это его определение
+
 
 Пробелы и подобные ему знаки будут автоматически убираться с начала и конца, так что вы можете спокойно оставлять их, чтобы список было удобнее читать (т.е. не обязательно делать так: Слово#$#А это его определение$#$) (e.g. you dont have to do that: A word#$# a long definition$#$)
 .
