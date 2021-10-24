@@ -1,3 +1,4 @@
-economy #$# siens abaut maney
-$%$vowel #$# no stop
-$%$cons #$# yes stop
+economy #$# siens abaut maney $%$
+vowel #$# no stop $%$
+cons #$# yes stop $%$
+слово #$# дефиниция
